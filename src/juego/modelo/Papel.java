@@ -5,7 +5,7 @@ package juego.modelo;
  */
 public class Papel implements Jugada {
 
-    public String interactuar(Jugada jugada) {
+    public String versus(Jugada jugada) {
         return jugada.interactuarJugada(this);
     }
 

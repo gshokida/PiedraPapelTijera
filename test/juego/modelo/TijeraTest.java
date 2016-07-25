@@ -13,7 +13,7 @@ public class TijeraTest {
         Tijera tijera = new Tijera();
         Papel papel = new Papel();
 
-        assertTrue("Gana" == tijera.interactuar(papel));
+        assertTrue("Gana" == tijera.versus(papel));
     }
 
     @Test
@@ -21,7 +21,7 @@ public class TijeraTest {
         Tijera tijera = new Tijera();
         Tijera tijeraDos = new Tijera();
 
-        assertTrue("Empate" == tijera.interactuar(tijeraDos));
+        assertTrue("Empate" == tijera.versus(tijeraDos));
     }
 
     @Test
@@ -29,6 +29,6 @@ public class TijeraTest {
         Tijera tijera = new Tijera();
         Piedra piedra = new Piedra();
 
-        assertTrue("Pierde" == tijera.interactuar(piedra));
+        assertTrue("Pierde" == tijera.versus(piedra));
     }
 }

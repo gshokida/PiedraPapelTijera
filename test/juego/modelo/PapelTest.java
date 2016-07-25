@@ -13,7 +13,7 @@ public class PapelTest {
         Papel papel1 = new Papel();
         Papel papel2 = new Papel();
 
-        assertTrue("Empate" == papel1.interactuar(papel2));
+        assertTrue("Empate" == papel1.versus(papel2));
     }
 
     @Test
@@ -21,7 +21,7 @@ public class PapelTest {
         Papel papel = new Papel();
         Tijera tijera = new Tijera();
 
-        assertTrue("Pierde" == papel.interactuar(tijera));
+        assertTrue("Pierde" == papel.versus(tijera));
     }
 
     @Test
@@ -29,6 +29,6 @@ public class PapelTest {
         Papel papel = new Papel();
         Piedra piedra = new Piedra();
 
-        assertTrue("Gana" == papel.interactuar(piedra));
+        assertTrue("Gana" == papel.versus(piedra));
     }
 }
